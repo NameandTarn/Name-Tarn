@@ -3,6 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ff4d6d">
+    <meta name="description" content="บันทึกทุกเรื่องราวความรักของเราสองคน - A couple's love journey tracker">
+    <meta name="keywords" content="love, couple, anniversary, memories, tracker">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Our Journey">
+    <meta name="msapplication-TileColor" content="#ff4d6d">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='60' font-size='80' text-anchor='middle'>❤️</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect fill='%23ff4d6d' width='180' height='180' rx='40'/><text x='90' y='105' font-size='100' fill='white' text-anchor='middle' dominant-baseline='central'>❤️</text></svg>">
     <title>Our Eternal Journey | Name & Namtarn</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Mitr:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
@@ -463,6 +474,15 @@
             rotateQuotes();
             setInterval(updateAll, 60000);
             setInterval(rotateQuotes, 60000);
+            
+            // Register Service Worker for PWA
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('sw.js').then(registration => {
+                    console.log('Service Worker registered successfully:', registration);
+                }).catch(error => {
+                    console.log('Service Worker registration failed:', error);
+                });
+            }
         };
     </script>
 </body>
