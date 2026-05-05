@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+  <msapplication>
+    <tile>
+      <square150x150logo src="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 150'&gt;&lt;rect fill='%23ff4d6d' width='150' height='150'/&gt;&lt;text x='75' y='90' font-size='60' fill='white' text-anchor='middle' dominant-baseline='central'&gt;❤️&lt;/text&gt;&lt;/svg&gt;"/>
+      <wide310x150logo src="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 310 150'&gt;&lt;rect fill='%23ff4d6d' width='310' height='150'/&gt;&lt;text x='75' y='90' font-size='60' fill='white' text-anchor='middle' dominant-baseline='central'&gt;❤️&lt;/text&gt;&lt;/svg&gt;"/>
+      <square310x310logo src="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 310 310'&gt;&lt;rect fill='%23ff4d6d' width='310' height='310'/&gt;&lt;text x='155' y='160' font-size='100' fill='white' text-anchor='middle' dominant-baseline='central'&gt;❤️&lt;/text&gt;&lt;/svg&gt;"/>
+      <TileColor>#ff4d6d</TileColor>
+    </tile>
+  </msapplication>
+</browserconfig>
